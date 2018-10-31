@@ -1,4 +1,23 @@
-body{
+a{
+  text-decoration: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active{
+  text-decoration: none;
+}
+img{
+  display: block;
+  width:100%;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.body_bg{
   background-color: #222d23;
 }
 .panel-title{
@@ -11,13 +30,66 @@ body{
   margin-top: 150px;
 }
 
+.it_aside{
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top:0;
+  background-color: #222D32;
+}
+.it_aside .brand{
+  width: 180px;
+  height: 50px;
+  background-color: #367FA9;
+}
+.it_aside .brand a{
+  display: block;
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+}
+.it_aside .user{
+  height: 180px;
+  padding-top: 30px;
+}
+.it_aside .user img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin:  0 auto;
+}
+.it_aside .user p{
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+.it_aside .nav a{
+  display: block;
+  color:#fff;
+  height: 40px;
+  line-height: 40px;
+  border-left: 3px solid transparent;
+  padding-left: 40px;
+}
+.it_aside .nav a.active{
+  background-color: #1D1F21;
+  border-left: 3px solid #069;
+}
+.it_aside .nav a i{
+  margin-right: 4px;
+}
+.it_aside .nav .child{
+  display: none;
+}
+.it_aside .nav .child a{
+  padding-left: 60px;
 
-
-
-
-
-
-
+}
 
 
 
