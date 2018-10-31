@@ -38,6 +38,11 @@ ul{
   top:0;
   background-color: #222D32;
   z-index: 999;
+  transition:all 1s;
+
+}
+.it_aside.hidemenu{
+  left: -180px;
 }
 .it_aside .brand{
   width: 180px;
@@ -95,7 +100,12 @@ ul{
   padding-left: 180px;
   padding-top: 50px;
   height: 1000px;
+  transition:all 1s;
   
+}
+.it_main.hidemenu{
+  padding-left: 0px;
+
 }
 .it_top{
   height:50px;
@@ -105,6 +115,10 @@ ul{
   top: 0;
   background-color: #3C8DBC;
   padding-left: 180px;
+  transition:all 1s;
+}
+.it_top.hidemenu{
+  padding-left: 0px;
 }
 .it_top a{
   height: 50px;
@@ -120,6 +134,8 @@ ul{
   padding-right: 16px;
 }
 
-
+.red{
+  color: #A94442;
+}
 
 

@@ -32,7 +32,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="category">
             <i class="glyphicon glyphicon-list"></i>
             <span>分类管理</span>
           </a>
@@ -54,8 +54,8 @@
   <div class="it_main">
     <!-- 头部 -->
     <div class="it_top">
-      <a href="#" class="pull-left"><i class="glyphicon glyphicon-align-justify"></i></a>
-      <a href="#" class="pull-right"><i class="glyphicon glyphicon-log-out"></i></a>
+      <a href="#" class="pull-left menu" ><i class="glyphicon glyphicon-align-justify"></i></a>
+      <a href="#" class="pull-right logout" ><i class="glyphicon glyphicon-log-out"></i></a>
     </div>
     <div class="it_content">
       <!-- 路径导航 -->
@@ -66,6 +66,24 @@
     </div>
   </div>
 
+ 
+      <div class="modal fade" id="logoutModal">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" ><span >&times;</span></button>
+                <h4 class="modal-title">温馨提示</h4>
+              </div>
+              <div class="modal-body">
+                <p class="red"><i class="glyphicon glyphicon-info-sign"></i>您确定要退出后台管理系统吗？</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="logoutbtn">退出</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
 
 
 
@@ -81,6 +99,7 @@
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <script src="lib/bootstrap-validator/js/bootstrapValidator.js"></script>
   <script src="lib/nprogress/nprogress.js"></script>
+  <script src="js/check_login.js"></script>
   <script src="js/common.js"></script>
 </body>
 </html>
