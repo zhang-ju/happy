@@ -116,6 +116,7 @@ ul{
   background-color: #3C8DBC;
   padding-left: 180px;
   transition:all 1s;
+  z-index: 666;
 }
 .it_top.hidemenu{
   padding-left: 0px;
@@ -137,5 +138,25 @@ ul{
 .red{
   color: #A94442;
 }
+.it_content .content_left,
+.it_content .content_right{
+  width: 48%;
+  height: 400px;
+  background-color: sandybrown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

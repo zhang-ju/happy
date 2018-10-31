@@ -16,7 +16,7 @@ $(document).ajaxStop(function(){
   setTimeout(function(){
     NProgress.done();
 
-  },500)
+  },1000)
 });
 // 二级导航栏切换;
 $('.it_aside .nav .category').click(function(){
