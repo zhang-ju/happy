@@ -16,6 +16,9 @@ ul{
   padding: 0;
   list-style: none;
 }
+.table{
+  margin-top: 20px;
+}
 .table.table-bordered th,
 .table.table-bordered td{
 text-align: center;
@@ -149,7 +152,11 @@ vertical-align: middle;
   background-color: sandybrown;
 }
 
-
+.it_content tbody img{
+  width: auto;
+  height: 50px;
+  margin: 0 auto;
+}
 
 
 
