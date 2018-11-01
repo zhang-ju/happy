@@ -1,7 +1,8 @@
 $(function(){
   var currentPage=1;
   var pageSize=5;
-  render();//通过ajax渲染数据到表格中；
+  render();
+  //通过ajax渲染数据到表格中；
   function render(){
     $.ajax({
       type:'get',
@@ -12,7 +13,7 @@ $(function(){
       },
       dataType:'json',
       success:function(info){
-        console.log(info);
+        // console.log(info);
         var str=template('secTmp',info);
         $('tbody').html(str);
         $('#secpaginator').bootstrapPaginator({
@@ -29,8 +30,10 @@ $(function(){
 
   }
 
-
-
+  // 点击添加分类按钮模态框显示；
+  $('#addBtn').on('click',function(){
+    $('#secModal').modal('show');
+  })
 
 
 
