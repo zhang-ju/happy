@@ -107,7 +107,7 @@
                   <div class="form-group">
                     <div class="dropdown">
                         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                          请选择一级分类
+                          <span id="topText">请选择一级分类</span>
                           <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" >
@@ -115,16 +115,20 @@
                           
                         </ul>
                     </div>
+                    <input type="hidden" name="categoryId">
+                    <input type="hidden" name="hot" value="1">
                   </div>
                       
                   <div class="form-group">
                     <input type="text" name="brandName" class="form-control" placeholder="请输入二级分类">
                   </div>
                   <div class="form-group">
-                    <button class="btn btn-default">上传图片</button>
+                    <label for="fileupload" class="btn btn-default">上传图片</label>
+                    <input type="file" name="pic1"  data-url="/category/addSecondCategoryPic" id="fileupload" style="display:none">
                   </div>
-                  <div class="form-group">
+                  <div class="form-group" id="imgBox">
                     <img src="images/别让我走.Never.Let.Me.Go.Ep06.Chi_Jap.HDTVrip.1280X720-ZhuixinFan_20181013183348.JPG" alt="">
+                    <input type="hidden" name="brandLogo">
                   </div>
                       
                    
@@ -160,9 +164,6 @@
         </div><!-- /.modal -->
 
 
-
-
-
 <script type="text/html" id="secTmp">
 {{each rows v i}}
   <tr>
@@ -176,11 +177,20 @@
 
 </script>
 
+<script type="text/html" id="topTmp">
+  {{each rows v i}}
+  <li ><a data-id="{{v.id}}" tabindex="-1" href="#">{{v.categoryName}}</a></li>
+    
+  {{/each}}
+  
+  </script>
 
 
 
 
   <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery-fileupload/jquery.ui.widget.js"></script>
+  <script src="lib/jquery-fileupload/jquery.fileupload.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <script src="lib/bootstrap-validator/js/bootstrapValidator.js"></script>
   <script src="lib/nprogress/nprogress.js"></script>
